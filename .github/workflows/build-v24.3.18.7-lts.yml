@@ -55,7 +55,7 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.CLICKHOUSE_VERSION }}
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:24.3-lts-arm64
+            ${{ env.CLICKHOUSE_VERSION }}
+            24.3-lts-arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
